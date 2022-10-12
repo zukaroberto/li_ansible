@@ -1,0 +1,33 @@
+---
+- hosts: all
+  become: true
+
+  tasks:
+#     - name: remove apache2
+#       apt:
+#         name: apache2*
+#         state: absent
+#     - name: remove sw-nginx
+#       apt:
+#         name: sw-nginx
+#         state: absent
+#     - name: remove postfix
+#       apt:
+#         name: postfix
+#         state: absent
+#     - name: remove sw-cp-server
+#       apt:
+#         name: sw-cp-server
+#         state: absent
+#     - name: remove mariadb
+#       apt:
+#         name: mariadb*
+#         state: absent
+#     - name: remove plesk
+#       apt:
+#         name: plesk*
+#         state: absent
+     - name: remove mysql
+       apt:
+         name: mysql*
+         state: absent

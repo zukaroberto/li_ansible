@@ -1,0 +1,23 @@
+---
+- hosts: all
+  become: true
+  vars:
+    one_click_installer: https://autoinstall.plesk.com/one-click-installer
+    plesk_installer: https://autoinstall.plesk.com/plesk-installer
+#    plesk_tier: testing
+# This playbook contains common plays that will be run on all nodes.
+  tasks:
+     - name: Download one-click-installer
+       get_url: url={{one_click_installer}} dest=/root/one-click-installer mode=0755
+
+     - name: Install Plesk
+       command: /root/one-click-installer
+# async: 3000
+# poll: 0
+# register: plesk_installer_sleeper
+
+#- name: Wait for Plesk installation
+# async_status: jid={{ plesk_installer_sleeper.ansible_job_id }}
+# register: job_result
+# until: job_result.finished
+# retries: 3000

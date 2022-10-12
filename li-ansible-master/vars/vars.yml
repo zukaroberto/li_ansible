@@ -1,0 +1,36 @@
+---
+### Variables listed here are applicable to all host groups
+
+######################################################
+### Plesk settings begin
+
+### Define URL for license file
+# plesk_license_url: "<TBD_license_file_URL>"
+
+### Activation code for trial license can be obtained here http://www.plesk.com/download
+#plesk_license_activation_code: A00J00-NBNH04-M5YD13-9K9733-YPCA99
+
+### Installation parameters
+one_click_installer: https://autoinstall.plesk.com/one-click-installer
+plesk_installer: https://autoinstall.plesk.com/plesk-installer
+plesk_tier: testing
+
+### Extensions catalog URL
+extore_url: https://ext.plesk.com
+
+
+### Plesk initialization parameters
+eula_license_agreed: true
+ip_type: shared
+admin_info_not_required: true
+admin_email: admin@none.none
+admin_company: Plesk
+admin_address: Oct 4
+admin_city: Novosibirsk
+admin_state: Novosibirskaya Oblast
+admin_zip: 630000
+admin_country: RU
+admin_phone: 89139130000
+
+### Plesk settings end
+######################################################
